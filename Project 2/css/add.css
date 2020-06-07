@@ -1,0 +1,10 @@
+#B :hover {
+    font-size: 1.2rem !important;
+    background-color: #15737e;
+}
+
+
+.navbar-brand:hover {
+    font-size: 1.5rem;
+
+}
