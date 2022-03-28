@@ -1,0 +1,144 @@
+body {
+    cursor: default;
+}
+
+#personal-photo>img:nth-child(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+#personal-photo>img:nth-child(2) {
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+}
+
+#personal-photo>img {
+    filter: alpha(opacity=1);
+    opacity: 0;
+    animation: round 10S linear infinite;
+    height: 90%;
+    right: -5%;
+}
+
+@keyframes round {
+    10% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 0 - 1秒 淡入*/
+    }
+
+    50% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+
+        /* 1- 5秒靜止*/
+    }
+
+    60% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /* 5-6秒淡出*/
+    }
+}
+
+h3>span {
+    font-size: 15px;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+#about-section {
+    background-color: #f8f9fa;
+}
+
+.about-item {
+    text-align: center;
+    margin: 0;
+}
+
+.about-title {
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+
+.youtube-link:hover {
+    color: brown;
+}
+
+.activity {
+    font-weight: bold;
+}
+
+.activity:hover {
+    color: green;
+}
+
+.activity-pic>img:hover {
+    transform: scale(1.05, 1.05);
+}
+
+#Contact-section {
+    background-color: #f8f9fa;
+}
+
+.inp {
+    margin: 20px;
+    border-radius: 0;
+}
+
+#submit {
+    display: flex;
+    width: 100%;
+    justify-content: center
+}
+
+#submit>button {
+    background-color: #207561;
+    border: #207561;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 20px;
+    border-radius: 0;
+}
+
+#submit>button:hover {
+    background: -webkit-linear-gradient(rgb(12, 110, 36), rgb(1, 49, 16));
+
+}
+
+#phone {
+    margin-top: 33%;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+#email {
+    text-align: center;
+    font-size: 30px;
+}
+
+#address {
+    text-align: center;
+    font-size: 20px;
+}
+
+#logo-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo-box>a>i {
+    font-size: 100px;
+}
+
+#logo-box>a>i:hover {
+    background: linear-gradient(rgb(34, 204, 62), rgb(9, 61, 3));
+    background: -webkit-linear-gradient(rgb(34, 204, 62), rgb(9, 61, 3));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
